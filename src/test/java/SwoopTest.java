@@ -17,11 +17,11 @@ public class SwoopTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+        driver.get("https://www.swoop.ge/");
     }
 
     @Test
     public void logInTest() {
-        driver.get("https://www.swoop.ge/");
         WebDriverWait wait = new WebDriverWait(driver, 10);
 
         WebElement logInButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='HeaderTools swoop-login']/p")));
