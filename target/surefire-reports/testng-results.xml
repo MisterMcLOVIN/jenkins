@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-27T01:27:02 GET" name="SwoopTest" finished-at="2023-07-27T01:27:13 GET" duration-ms="10846">
+  <suite started-at="2023-07-27T01:40:35 GET" name="Surefire suite" finished-at="2023-07-27T01:40:45 GET" duration-ms="10059">
     <groups>
     </groups>
-    <test started-at="2023-07-27T01:27:02 GET" name="Command line test" finished-at="2023-07-27T01:27:13 GET" duration-ms="10846">
+    <test started-at="2023-07-27T01:40:35 GET" name="Surefire test" finished-at="2023-07-27T01:40:45 GET" duration-ms="10059">
       <class name="SwoopTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:SwoopTest@ae13544]" started-at="2023-07-27T01:27:02 GET" name="setUp" finished-at="2023-07-27T01:27:05 GET" duration-ms="2417" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SwoopTest@5ab9e72c]" started-at="2023-07-27T01:40:35 GET" name="setUp" finished-at="2023-07-27T01:40:37 GET" duration-ms="2552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logInTest()[pri:0, instance:SwoopTest@ae13544]" started-at="2023-07-27T01:27:05 GET" name="logInTest" finished-at="2023-07-27T01:27:13 GET" duration-ms="8355" status="PASS">
+        <test-method signature="logInTest()[pri:0, instance:SwoopTest@5ab9e72c]" started-at="2023-07-27T01:40:37 GET" name="logInTest" finished-at="2023-07-27T01:40:45 GET" duration-ms="7444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logInTest -->
       </class> <!-- SwoopTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- SwoopTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>
