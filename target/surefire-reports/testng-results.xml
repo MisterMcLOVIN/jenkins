@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-27T01:14:56 GET" name="Surefire suite" finished-at="2023-07-27T01:15:05 GET" duration-ms="9126">
+    <groups>
+    </groups>
+    <test started-at="2023-07-27T01:14:56 GET" name="Surefire test" finished-at="2023-07-27T01:15:05 GET" duration-ms="9126">
+      <class name="SwoopTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SwoopTest@76f2bbc1]" started-at="2023-07-27T01:14:56 GET" name="setUp" finished-at="2023-07-27T01:14:59 GET" duration-ms="2685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logInTest()[pri:0, instance:SwoopTest@76f2bbc1]" started-at="2023-07-27T01:14:59 GET" name="logInTest" finished-at="2023-07-27T01:15:05 GET" duration-ms="6372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInTest -->
+      </class> <!-- SwoopTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
