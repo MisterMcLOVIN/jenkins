@@ -46,6 +46,13 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-clean-plugin</artifactId>
+            <version>3.3.1</version>
+            <type>maven-plugin</type>
+        </dependency>
+
 <!--        <dependency>-->
 <!--            <groupId>org.aspectj</groupId>-->
 <!--            <artifactId>aspectjweaver</artifactId>-->
