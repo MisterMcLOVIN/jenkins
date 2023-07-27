@@ -20,13 +20,9 @@ pipeline {
 
     stage('generate allure') {
       steps {
-        sh '''stage(\'Generate Allure Report\') {
-  steps {
-    sh \'allure generate\'
-  }
-}'''
-        }
+        bat 'bat \'start allure generate\''
       }
-
     }
+
   }
+}
