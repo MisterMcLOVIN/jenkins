@@ -20,7 +20,7 @@ pipeline {
 
     stage('generate allure') {
       steps {
-        bat 'bat \'start allure generate\''
+        bat 'allure serve'
       }
     }
 
