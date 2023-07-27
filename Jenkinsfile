@@ -20,22 +20,13 @@ pipeline {
 
     stage('generate allure') {
       steps {
-        script {
-          stage('Generate Allure Report') {
-            steps {
-              run arbitrary pipeline script: 'allure-generate'
-            }
-          }
-
-          stage('Upload Allure Report') {
-            steps {
-              archiveArtifacts artifacts: 'allure-results/**'
-            }
-          }
-        }
-
-      }
-    }
-
+        sh '''stage(\'Generate Allure Report\') {
+  steps {
+    sh \'allure generate\'
   }
-}
+}'''
+        }
+      }
+
+    }
+  }
