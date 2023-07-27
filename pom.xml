@@ -8,89 +8,146 @@
     <artifactId>jenkins</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+<!--    <properties>-->
+<!--        <maven.compiler.source>11</maven.compiler.source>-->
+<!--        <maven.compiler.target>11</maven.compiler.target>-->
+<!--        &lt;!&ndash;        <aspectj.version>1.9.2</aspectj.version>&ndash;&gt;-->
+<!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+<!--    </properties>-->
+<!--    <dependencies>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.qameta.allure/allure-maven &ndash;&gt;-->
+
+
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.qameta.allure/allure-testng &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.qameta.allure</groupId>-->
+<!--            <artifactId>allure-testng</artifactId>-->
+<!--            <version>2.17.3</version>-->
+<!--        </dependency>-->
+
+
+<!--        <dependency>-->
+<!--            <groupId>io.github.bonigarcia</groupId>-->
+<!--            <artifactId>webdrivermanager</artifactId>-->
+<!--            <version>4.2.2</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.seleniumhq.selenium</groupId>-->
+<!--            <artifactId>selenium-java</artifactId>-->
+<!--            <version>3.141.5</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>org.testng</groupId>-->
+<!--            <artifactId>testng</artifactId>-->
+<!--            <version>7.4.0</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash;        <dependency>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <groupId>org.apache.maven.plugins</groupId>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <artifactId>maven-clean-plugin</artifactId>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <version>3.3.1</version>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <type>maven-plugin</type>&ndash;&gt;-->
+<!--        &lt;!&ndash;        </dependency>&ndash;&gt;-->
+<!--        &lt;!&ndash;        &ndash;&gt;-->
+<!--        &lt;!&ndash;        &ndash;&gt;-->
+
+<!--        &lt;!&ndash;        <dependency>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <groupId>org.aspectj</groupId>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <artifactId>aspectjweaver</artifactId>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <version>${aspectj.version}</version>&ndash;&gt;-->
+<!--        &lt;!&ndash;        </dependency>&ndash;&gt;-->
+<!--    </dependencies>-->
+
+<!--    <build>-->
+<!--        &lt;!&ndash;    <plugins>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <plugin>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <groupId>org.apache.maven.plugins</groupId>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <artifactId>maven-surefire-plugin</artifactId>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <version>2.19.1</version>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <dependencies>&ndash;&gt;-->
+<!--        &lt;!&ndash;                <dependency>&ndash;&gt;-->
+<!--        &lt;!&ndash;                    <groupId>org.aspectj</groupId>&ndash;&gt;-->
+<!--        &lt;!&ndash;                    <artifactId>aspectjweaver</artifactId>&ndash;&gt;-->
+<!--        &lt;!&ndash;                    <version>${aspectj.version}</version>&ndash;&gt;-->
+<!--        &lt;!&ndash;                </dependency>&ndash;&gt;-->
+<!--        &lt;!&ndash;            </dependencies>&ndash;&gt;-->
+<!--        &lt;!&ndash;        </plugin>&ndash;&gt;-->
+<!--        &lt;!&ndash;    </plugins>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <plugins>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <plugin>&ndash;&gt;-->
+<!--        &lt;!&ndash;                <groupId>org.apache.maven.plugins</groupId>&ndash;&gt;-->
+<!--        &lt;!&ndash;                <artifactId>maven-surefire-plugin</artifactId>&ndash;&gt;-->
+<!--        &lt;!&ndash;                <version>3.1.2</version>&ndash;&gt;-->
+<!--        &lt;!&ndash;            </plugin>&ndash;&gt;-->
+<!--        &lt;!&ndash;        </plugins>&ndash;&gt;-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                <version>2.19.1</version>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
+
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <!--        <aspectj.version>1.9.2</aspectj.version>-->
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Specify Java version -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <!-- Specify Selenium version -->
+        <selenium.version>3.141.59</selenium.version>
     </properties>
+
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-maven -->
-
-
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-testng</artifactId>
-            <version>2.17.3</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>4.2.2</version>
-        </dependency>
+        <!-- Selenium WebDriver -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.141.5</version>
+            <version>${selenium.version}</version>
         </dependency>
 
+        <!-- WebDriverManager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.1.1</version>
+        </dependency>
+
+        <!-- TestNG (you can use other testing frameworks if desired) -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.4.0</version>
             <scope>test</scope>
         </dependency>
-
-        <!--        <dependency>-->
-        <!--            <groupId>org.apache.maven.plugins</groupId>-->
-        <!--            <artifactId>maven-clean-plugin</artifactId>-->
-        <!--            <version>3.3.1</version>-->
-        <!--            <type>maven-plugin</type>-->
-        <!--        </dependency>-->
-        <!--        -->
-        <!--        -->
-
-        <!--        <dependency>-->
-        <!--            <groupId>org.aspectj</groupId>-->
-        <!--            <artifactId>aspectjweaver</artifactId>-->
-        <!--            <version>${aspectj.version}</version>-->
-        <!--        </dependency>-->
     </dependencies>
 
     <build>
-        <!--    <plugins>-->
-        <!--        <plugin>-->
-        <!--            <groupId>org.apache.maven.plugins</groupId>-->
-        <!--            <artifactId>maven-surefire-plugin</artifactId>-->
-        <!--            <version>2.19.1</version>-->
-        <!--            <dependencies>-->
-        <!--                <dependency>-->
-        <!--                    <groupId>org.aspectj</groupId>-->
-        <!--                    <artifactId>aspectjweaver</artifactId>-->
-        <!--                    <version>${aspectj.version}</version>-->
-        <!--                </dependency>-->
-        <!--            </dependencies>-->
-        <!--        </plugin>-->
-        <!--    </plugins>-->
-        <!--        <plugins>-->
-        <!--            <plugin>-->
-        <!--                <groupId>org.apache.maven.plugins</groupId>-->
-        <!--                <artifactId>maven-surefire-plugin</artifactId>-->
-        <!--                <version>3.1.2</version>-->
-        <!--            </plugin>-->
-        <!--        </plugins>-->
         <plugins>
+            <!-- Maven Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+            <!-- Surefire Plugin for TestNG -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.19.1</version>
+                <version>3.0.0-M5</version>
                 <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
 </project>
