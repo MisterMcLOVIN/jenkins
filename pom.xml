@@ -18,12 +18,8 @@
 <!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.qameta.allure/allure-maven &ndash;&gt;-->
 
 
-<!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.qameta.allure/allure-testng &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>io.qameta.allure</groupId>-->
-<!--            <artifactId>allure-testng</artifactId>-->
-<!--            <version>2.17.3</version>-->
-<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+
 
 
 <!--        <dependency>-->
@@ -113,6 +109,12 @@
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.17.3</version>
         </dependency>
 
         <!-- TestNG (you can use other testing frameworks if desired) -->
