@@ -1,1 +1,0 @@
-{"uuid":"f27e194a-588c-4efd-b4ff-7a842a7075cb","name":"jenkins","children":["677cccd5-edc8-4440-8a2b-25908cb0a39a"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1690411006319,"stop":1690411014163}],"afters":[],"start":1690411006306,"stop":1690411014457}
